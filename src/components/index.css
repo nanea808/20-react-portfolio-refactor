@@ -67,7 +67,7 @@ nav a:hover {
 /* Background Class */
 .background {
     height: 250px;
-    background-image: url(../images/tumblr_cd9b5975db6cbef169049ee56f3f9a52_77569aae_2048.jpg);
+    /* background-image: url(../images/tumblr_cd9b5975db6cbef169049ee56f3f9a52_77569aae_2048.jpg); */
     background-size: cover;
     background-position: bottom;
 }
