@@ -1,0 +1,182 @@
+:root {
+    --grey-header: #242E35;
+    --header-green-text: #4AFFC2;
+    --light-gray-background: #4B5959;
+    --off-white: #e9e9e9;
+}
+
+body {
+    background-color: var(--light-gray-background);
+
+    /* Fonts! */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.3;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 160%;
+}
+
+h3 {
+    font-size: 110%;
+}
+
+/* Header + Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3% 3.5% 1.3% 0;
+    background-color: var(--grey-header);
+    color: var(--grey-header);
+}
+
+header h1 {
+    padding: 0.3% 1% 0.3% 3.5%;
+    background-color: var(--header-green-text);
+}
+
+/* nav container */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style-type: none; 
+}
+
+/* nav links */
+nav a {
+    color: var(--header-green-text);
+    text-decoration: none;
+    
+}
+
+/* nav links hover */
+nav a:hover {
+    color: var(--off-white);
+}
+
+/* Background Class */
+.background {
+    height: 250px;
+    background-image: url(../images/tumblr_cd9b5975db6cbef169049ee56f3f9a52_77569aae_2048.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* Main Content Classes */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sector-column {
+    display: flex;
+    flex: 1 0 100%;
+    padding: 20px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.sector-header {
+    padding: inherit;
+    padding-right: 120px;
+    color: var(--header-green-text);
+    width: 100px;
+}
+
+.sector-paragraph {
+    padding: inherit;
+    color: var(--off-white);
+}
+
+.sector-line-break {
+    border: 1px solid var(--grey-header);
+}
+
+/* Work Classes */
+.work-main {
+    flex-wrap: wrap;
+    padding: inherit;
+    max-width: 100%;
+}
+
+.work-card {
+    flex: 25%;
+    padding: inherit;
+}
+
+.work-card img {
+    width: 300px;
+    height: 150px;
+    border: 5px solid var(--header-green-text);
+    transition: outline 100ms ease-in-out;
+}
+
+.work-card:hover img {
+    cursor: pointer;
+    outline: 5px solid var(--header-green-text);
+}
+
+.work-header {
+    position: absolute;
+    margin-top: 20px;
+    padding: 0.3% 0.8% 0.3% 3.5%;
+    background-color: var(--header-green-text);
+    color: var(--grey-header);
+}
+
+/* Contact Info Classes + Id's */
+.contact-info {
+    padding: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 80%;
+    justify-content: space-evenly;
+    color: var(--header-green-text);
+    text-decoration: underline solid var(--grey-header) 2px;
+    text-underline-offset: 3px;
+}
+
+#number::before {
+    content: "📞";
+}
+
+#email::before {
+    content: "📧";
+}
+
+#github::before {
+    content: "😺";
+}
+
+#twitter::before {
+    content: "🐦";
+}
+
+#spotify::before {
+    content: "🎵";
+}
+
+@media screen and (max-width: 530px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 621px) {
+    .sector-column {
+        display: inline;
+    }
+}
