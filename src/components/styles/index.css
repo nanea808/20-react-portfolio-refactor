@@ -11,7 +11,7 @@ body {
     line-height: 1.3;
 }
 
-h1, h2, h3 {
+/* h1, h2, h3 {
     line-height: 1.1;
 }
 
@@ -25,7 +25,7 @@ h2 {
 
 h3 {
     font-size: 110%;
-}
+} */
 
 /* Old Header + Navbar */
 /* header {
@@ -57,7 +57,7 @@ header h1 {
 }
 
 .nav h1 {
-    /* needs bigger font */
+    font-size: 200%;
     padding: 0.5rem;
     background-color: var(--super-green);
     
@@ -71,15 +71,14 @@ header h1 {
     
 }
 
-/* active nav links */
+.nav-link:hover {
+    color: var(--off-white);
+}
+
+/* active class for nav tabs */
 .active {
     border: 0.03rem solid var(--off-white);
     border-radius: 3%;
-}
-
-/* nav links hover */
-.nav-link:hover {
-    color: var(--off-white);
 }
 
 /* Background Class */
@@ -90,24 +89,28 @@ header h1 {
     background-position: bottom;
 }
 
-/* Main Content Classes */
+/* refactored flexbox classes */
 .row {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    padding: inherit;
 }
 
-.sector-column {
-    display: flex;
-    flex: 1 0 100%;
-    padding: 20px;
+.column {
+    flex: 25%;
+    padding: 15px;
+}
+
+.column h2 {
+    font-size: 160%;
+    color: var(--super-green);
 }
 
 .justify-center {
     justify-content: center;
 }
 
-.sector-header {
+/* .sector-header {
     padding: inherit;
     padding-right: 120px;
     color: var(--super-green);
@@ -121,33 +124,26 @@ header h1 {
 
 .sector-line-break {
     border: 1px solid var(--dark-grey);
-}
+} */
 
-/* Work Classes */
-.work-main {
-    flex-wrap: wrap;
-    padding: inherit;
-    max-width: 100%;
-}
-
-.work-card {
-    flex: 25%;
+/* refactored card class */
+.card {
     padding: inherit;
 }
 
-.work-card img {
+.card img {
     width: 300px;
     height: 150px;
     border: 5px solid var(--super-green);
     transition: outline 100ms ease-in-out;
 }
 
-.work-card:hover img {
+.card:hover img {
     cursor: pointer;
     outline: 5px solid var(--super-green);
 }
 
-.work-header {
+.card h3 {
     position: absolute;
     margin-top: 20px;
     padding: 0.3% 0.8% 0.3% 3.5%;

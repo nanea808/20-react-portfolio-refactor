@@ -1,43 +1,35 @@
 import React from "react";
+import plumingPipes from "../images/185811819_90418abf3e_w.jpg";
+import electricalWires from "../images/15404933015_28f2b38c09_w.jpg";
+import concert from "../images/concert.jpg";
+import presentPearWebsite from "../images/present-pear.png";
+import skateboards from "../images/7004450864_e2960c0e4c_w.jpg";
 
 export default function Work() {
   return (
-    <div>
+    <div className="column">
       {/* fix this shit */}
-      <h2 className="sector-header">Work</h2>
-      <hr className="sector-line-break" />
-      <div className="work-main row" id="cards">
-        <section className="work-card">
-          <h3 className="work-header">Plumbing</h3>
-          <img
-            src="./assets/images/185811819_90418abf3e_w.jpg"
-            alt="Pumbing Pipes"
-          />
+      <h2>Work</h2>
+      <div className="row justify-center" id="cards">
+        <section className="card">
+          <h3>Plumbing</h3>
+          <img src={plumingPipes} alt="Pumbing Pipes" />
         </section>
-        <section className="work-card">
-          <h3 className="work-header">Electrical</h3>
-          <img
-            src="./assets/images/15404933015_28f2b38c09_w.jpg"
-            alt="Electrical Wires"
-          />
+        <section className="card">
+          <h3>Electrical</h3>
+          <img src={electricalWires} alt="Electrical Wires" />
         </section>
-        <section className="work-card">
-          <h3 className="work-header">Project 1</h3>
-          <img src="./assets/images/concert.jpg" alt="Ticketmaster Weather" />
+        <section className="card">
+          <h3>Project 1</h3>
+          <img src={concert} alt="Ticketmaster Weather" />
         </section>
-        <section className="work-card">
-          <h3 className="work-header">Project 2</h3>
-          <img
-            src="./assets/images/present-pear.png"
-            alt="Present Pear Website"
-          />
+        <section className="card">
+          <h3>Project 2</h3>
+          <img src={presentPearWebsite} alt="Present Pear Website" />
         </section>
-        <section className="work-card">
-          <h3 className="work-header">Skateboarding</h3>
-          <img
-            src="./assets/images/7004450864_e2960c0e4c_w.jpg"
-            alt="Skateboards"
-          />
+        <section className="card">
+          <h3>Skateboarding</h3>
+          <img src={skateboards} alt="Skateboards" />
         </section>
       </div>
     </div>
