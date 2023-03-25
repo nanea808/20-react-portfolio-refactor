@@ -1,24 +1,23 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
-import Home from './pages/Home';
+import Work from './pages/Work';
 import About from './pages/About';
-import Blog from './pages/Blog';
+import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('Work');
 
-  // TODO: Add a comment describing the functionality of this method
-  // When a tab is selected on the navbar render the coresponding page
+  // Refactor with switch statement
   const RenderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
+    if (currentPage === 'Work') {
+      return <Work />;
     }
     if (currentPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'Blog') {
-      return <Blog />;
+    if (currentPage === 'Resume') {
+      return <Resume />;
     }
     return <Contact />;
   };
@@ -30,6 +29,7 @@ export default function PortfolioContainer() {
       {/* // TODO: Add a comment describing what we are passing as props */}
       {/* currentPage from our state variable and the handlePageChange method */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <div className='background'></div>
       {/* // TODO: Add a comment explaining what is happening on the following line */}
       {/* when the page loads we will call the renderPage method */}
       <RenderPage />

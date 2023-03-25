@@ -1,55 +1,66 @@
-import React from 'react';
+import React from "react";
 
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
-// destructured object?
+// const styles = {
+//   nav: {
+//     display: 'flex',
+//     flexWrap: 'wrap',
+//     paddingLeft: 0,
+//     marginBottom: 0,
+//     listStyle: 'none',
+//   },
+//   navItem: {
+//     padding: '1rem, 0.5rem'
+//   },
+//   navLink: {
+
+//   }
+// }
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-          // this is a ternary operator and it's checking if the current rendered page is 'Home'
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#about"
-          onClick={() => handlePageChange('About')}
-          //  TODO: Add a comment explaining what this logic is doing
-          // If the current redered page is 'about' then change the tabs styling to 'nav-link active'
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-        >
-          About
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#blog"
-          onClick={() => handlePageChange('Blog')}
-          //  TODO: Add a comment explaining what this logic is doing
-          // If the current redered page is 'blog' then change the tabs styling to 'nav-link active'
-          className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
-        >
-          Blog
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#contact"
-          //  TODO: Add a comment explaining what this logic is doing
-          // If the current redered page is 'contact' then change the tabs styling to 'nav-link active'
-          onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-        >
-          Contact
-        </a>
-      </li>
-    </ul>
+    <div className="nav">
+      <h1>Ethan Willers</h1>
+      <ul>
+        <li>
+          <a
+            href="#home"
+            onClick={() => handlePageChange("Work")}
+            className={currentPage === "Work" ? "nav-link active" : "nav-link"}
+          >
+            Work
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#about"
+            onClick={() => handlePageChange("About")}
+            className={currentPage === "About" ? "nav-link active" : "nav-link"}
+          >
+            About
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#blog"
+            onClick={() => handlePageChange("Resume")}
+            className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
+          >
+            Resume
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#contact"
+            onClick={() => handlePageChange("Contact")}
+            className={
+              currentPage === "Contact" ? "nav-link active" : "nav-link"
+            }
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 }
 
