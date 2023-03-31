@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.3218f9ef.css",
-    "main.js": "/static/js/main.b393b3ea.js",
-    "index.html": "/index.html",
-    "main.3218f9ef.css.map": "/static/css/main.3218f9ef.css.map",
-    "main.b393b3ea.js.map": "/static/js/main.b393b3ea.js.map"
+    "main.css": "/20-react-portfolio-refactor/static/css/main.e763c211.css",
+    "main.js": "/20-react-portfolio-refactor/static/js/main.f919237f.js",
+    "static/media/tumblr__77569aae_2048.jpg": "/20-react-portfolio-refactor/static/media/tumblr_cd9b5975db6cbef169049ee56f3f9a52_77569aae_2048.787995faca8c25ca498d.jpg",
+    "static/media/concert.jpg": "/20-react-portfolio-refactor/static/media/concert.33db67d802b4956e783a.jpg",
+    "static/media/7004450864_e2960c0e4c_w.jpg": "/20-react-portfolio-refactor/static/media/7004450864_e2960c0e4c_w.c40c762afe0ad64047aa.jpg",
+    "static/media/present-pear.png": "/20-react-portfolio-refactor/static/media/present-pear.8e98979b2051a19c5ec9.png",
+    "static/media/15404933015_28f2b38c09_w.jpg": "/20-react-portfolio-refactor/static/media/15404933015_28f2b38c09_w.cd94e920e8b822202466.jpg",
+    "static/media/185811819_90418abf3e_w.jpg": "/20-react-portfolio-refactor/static/media/185811819_90418abf3e_w.a84ce67dfd21fe5cba94.jpg",
+    "index.html": "/20-react-portfolio-refactor/index.html",
+    "main.e763c211.css.map": "/20-react-portfolio-refactor/static/css/main.e763c211.css.map",
+    "main.f919237f.js.map": "/20-react-portfolio-refactor/static/js/main.f919237f.js.map"
   },
   "entrypoints": [
-    "static/css/main.3218f9ef.css",
-    "static/js/main.b393b3ea.js"
+    "static/css/main.e763c211.css",
+    "static/js/main.f919237f.js"
   ]
 }
