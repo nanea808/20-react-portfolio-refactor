@@ -8,11 +8,11 @@ A portfolio of work to showcase my skills and talents.
 
 This is the website layout:
 
-![Horiseon informational website](./assets/images/portfoli-screen.png)
+![Website Layout](./images/portfolio-screenshot.png)
 
 ## Link
 
-[nanea808.github.io/first-challenge/](https://nanea808.github.io/portfolio-ethan-willers/)
+[nanea808.github.io/20-react-portfolio-refactor/](https://nanea808.github.io/20-react-portfolio-refactor/)
 
 ## Installation
 
