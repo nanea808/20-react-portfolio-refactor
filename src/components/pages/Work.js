@@ -1,4 +1,6 @@
 import React from "react";
+
+// images
 import plumingPipes from "../images/185811819_90418abf3e_w.jpg";
 import electricalWires from "../images/15404933015_28f2b38c09_w.jpg";
 import concert from "../images/concert.jpg";
@@ -8,7 +10,6 @@ import skateboards from "../images/7004450864_e2960c0e4c_w.jpg";
 export default function Work() {
   return (
     <div className="column">
-      {/* fix this shit */}
       <h2>Work</h2>
       <div className="row justify-center" id="cards">
         <section className="card">
