@@ -156,14 +156,25 @@ header h1 {
     padding: inherit;
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 80%;
+    flex: 25%;
     justify-content: space-evenly;
     color: var(--super-green);
     text-decoration: underline solid var(--dark-grey) 2px;
     text-underline-offset: 3px;
 }
 
-#number::before {
+.contact-info li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info li:hover {
+    cursor: pointer;
+    color: var(--off-white);
+}
+
+/* #number::before {
     content: "📞";
 }
 
@@ -181,7 +192,7 @@ header h1 {
 
 #spotify::before {
     content: "🎵";
-}
+} */
 
 @media screen and (max-width: 530px) {
     header {
