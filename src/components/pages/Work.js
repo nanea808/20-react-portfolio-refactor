@@ -7,28 +7,44 @@ import concert from "../images/concert.jpg";
 import presentPearWebsite from "../images/present-pear.png";
 import skateboards from "../images/7004450864_e2960c0e4c_w.jpg";
 
+const cardClick = (e) => {
+  e.preventDefault();
+
+  switch (e.currentTarget.firstElementChild.textContent) {
+      case 'Project 1':
+          window.location.href = "https://nanea808.github.io/01-project-dosequis-api/";
+          break;
+      case 'Project 2':
+          window.location.href = "https://present-pear.herokuapp.com/";
+          break;
+      default:
+          break;
+  }
+
+}
+
 export default function Work() {
   return (
     <div className="column">
       <h2>Work</h2>
       <div className="row justify-center" id="cards">
-        <section className="card">
+        <section className="card" onClick={cardClick}>
           <h3>Plumbing</h3>
           <img src={plumingPipes} alt="Pumbing Pipes" />
         </section>
-        <section className="card">
+        <section className="card" onClick={cardClick}>
           <h3>Electrical</h3>
           <img src={electricalWires} alt="Electrical Wires" />
         </section>
-        <section className="card">
+        <section className="card" onClick={cardClick}>
           <h3>Project 1</h3>
           <img src={concert} alt="Ticketmaster Weather" />
         </section>
-        <section className="card">
+        <section className="card" onClick={cardClick}>
           <h3>Project 2</h3>
           <img src={presentPearWebsite} alt="Present Pear Website" />
         </section>
-        <section className="card">
+        <section className="card" onClick={cardClick}>
           <h3>Skateboarding</h3>
           <img src={skateboards} alt="Skateboards" />
         </section>
