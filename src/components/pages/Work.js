@@ -11,14 +11,13 @@ import taskasaurus from "../images/tasker.jpg";
 const cardClick = (e) => {
   switch (e.currentTarget.firstElementChild.textContent) {
     case "Project 1":
-      window.location.href =
-        "https://nanea808.github.io/01-project-dosequis-api/";
+      window.open("https://nanea808.github.io/01-project-dosequis-api/").focus();
       break;
     case "Project 2":
-      window.location.href = "https://present-pear.herokuapp.com/";
+      window.open("https://present-pear.herokuapp.com/").focus();
       break;
     case "Task-a-saurus":
-      window.location.href = "https://taskasaurus-app.herokuapp.com/";
+      window.open("https://taskasaurus-app.herokuapp.com/").focus();
       break;
     default:
       break;
