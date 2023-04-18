@@ -2,7 +2,6 @@ import React from "react";
 import "icono";
 
 const contactClick = (e) => {
-  console.log(e.currentTarget.id);
   switch (e.currentTarget.id) {
     case "number":
       window.open("tel:5415056798", "_self").focus();
